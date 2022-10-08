@@ -1,2 +1,0 @@
-MainPackage=E:\通用应用程序\元素与物质\元素与物质\bin\x86\Release\元素与物质_1.3.0.0_x86.appx
-SymbolPackage=E:\通用应用程序\元素与物质\元素与物质_1.3.0.0_Test\元素与物质_1.3.0.0_x86.appxsym
