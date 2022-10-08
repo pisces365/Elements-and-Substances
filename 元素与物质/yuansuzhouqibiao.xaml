@@ -1,0 +1,248 @@
+﻿<Page
+    x:Class="元素与物质.yuansuzhouqibiao"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:元素与物质"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    mc:Ignorable="d">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+    <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Pivot Grid.Column="0"  Background="{ThemeResource SystemControlAcrylicWindowBrush }">
+            <PivotItem Header="短周期" Margin="10,10,0,5" >
+                    <ScrollViewer >
+                        <GridView   >
+                            <Button Name="H" Content="H" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="H_Click" />
+                            <Button Name="He" Content="He" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="He_Click" />
+                            <Button Name="Li" Content="Li" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Li_Click"/>
+                            <Button Name="Be" Content="Be" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Be_Click"/>
+                            <Button Name="B" Content="B" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B_Click"/>
+                            <Button Name="C" Content="C" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C_Click"/>
+                            <Button Name="N" Content="N" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="N_Click"/>
+                            <Button Name="O" Content="O" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="O_Click"/>
+                            <Button Name="F" Content="F" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="F_Click"/>
+                            <Button Name="Ne" Content="Ne" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ne_Click"/>
+                            <Button Name="Na" Content="Na" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Na_Click"/>
+                            <Button Name="Mg" Content="Mg" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Mg_Click" />
+                            <Button Name="Al" Content="Al" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Al_Click" />
+                            <Button Name="Si" Content="Si" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="Si_Click"/>
+                            <Button Name="P" Content="P" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="P_Click"/>
+                            <Button Name="S" Content="S" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="S_Click"/>
+                            <Button Name="Cl" Content="Cl" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cl_Click"/>
+                            <Button Name="Ar" Content="Ar" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="Ar_Click"/>
+                        </GridView>
+                    </ScrollViewer>
+                </PivotItem>
+            <PivotItem Header="长周期" Margin="10,10,0,5">
+                <ScrollViewer>
+                    <RelativePanel>
+                        <GridView>
+                            <Button Name="K" Content="K" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="K_Click"/>
+                            <Button Name="Ca" Content="Ca" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ca_Click"/>
+                            <Button Name="Sc" Content="Sc" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Sc_Click"/>
+                            <Button Name="Ti" Content="Ti" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ti_Click"/>
+                            <Button Name="V" Content="V" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="V_Click" />
+                            <Button Name="Cr" Content="Cr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cr_Click" />
+                            <Button Name="Mn" Content="Mn" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Mn_Click"/>
+                            <Button Name="Fe" Content="Fe" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Fe_Click"/>
+                            <Button Name="Co" Content="Co" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Co_Click"/>
+                            <Button Name="Ni" Content="Ni" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ni_Click"/>
+                            <Button Name="Cu" Content="Cu" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cu_Click"/>
+                            <Button Name="Zn" Content="Zn" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Zn_Click"/>
+                            <Button Name="Ga" Content="Ga" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ga_Click"/>
+                            <Button Name="Ge" Content="Ge" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ge_Click"/>
+                            <Button Name="As" Content="As" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="As_Click"/>
+                            <Button Name="Se" Content="Se" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Se_Click" />
+                            <Button Name="Br" Content="Br" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Br_Click" />
+                            <Button Name="Kr" Content="Kr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Kr_Click"/>
+                            <Button Name="Rb" Content="Rb" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Rb_Click"/>
+                            <Button Name="Sr" Content="Sr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Sr_Click"/>
+                            <Button Name="Y" Content="Y" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Y_Click" />
+                            <Button Name="Zr" Content="Zr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Zr_Click"/>
+                            <Button Name="Nb" Content="Nb" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Nb_Click"/>
+                            <Button Name="Mo" Content="Mo" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Mo_Click"/>
+                            <Button Name="Tc" Content="Tc" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Tc_Click"/>
+                            <Button Name="Ru" Content="Ru" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ru_Click"/>
+                            <Button Name="Rh" Content="Rh" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Rh_Click" />
+                            <Button Name="Pd" Content="Pd" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pd_Click" />
+                            <Button Name="Ag" Content="Ag" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ag_Click"/>
+                            <Button Name="Cd" Content="Cd" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cd_Click"/>
+                            <Button Name="In" Content="In" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="In_Click"/>
+                            <Button Name="Sn" Content="Sn" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Sn_Click"/>
+                            <Button Name="Sb" Content="Sb" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Sb_Click"/>
+                            <Button Name="Te" Content="Te" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Te_Click"/>
+                            <Button Name="I" Content="I" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="I_Click"/>
+                            <Button Name="Xe" Content="Xe" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Xe_Click"/>
+                            <Button Name="Cs" Content="Cs" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cs_Click"/>
+                            <Button Name="Ba" Content="Ba" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ba_Click"/>
+                            <Border Width="50" Height="50" >
+                                <TextBlock Text="La~Lu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Button Name="Hf" Content="Hf" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Hf_Click" />
+                            <Button Name="Ta" Content="Ta" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ta_Click"/>
+                            <Button Name="W" Content="W" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="W_Click"/>
+                            <Button Name="Re" Content="Re" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Re_Click"/>
+                            <Button Name="Os" Content="Os" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Os_Click"/>
+                            <Button Name="Ir" Content="Ir" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ir_Click"/>
+                            <Button Name="Pt" Content="Pt" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pt_Click"/>
+                            <Button Name="Au" Content="Au" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Au_Click"/>
+                            <Button Name="Hg" Content="Hg" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Hg_Click"/>
+                            <Button Name="Tl" Content="Tl" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Tl_Click"/>
+                            <Button Name="Pb" Content="Pb" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pb_Click" />
+                            <Button Name="Bi" Content="Bi" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Bi_Click" />
+                            <Button Name="Po" Content="Po" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Po_Click"/>
+                            <Button Name="At" Content="At" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="At_Click"/>
+                            <Button Name="Rn" Content="Rn" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Rn_Click"/>
+                            <Button Name="Fr" Content="Fr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Fr_Click"/>
+                            <Button Name="Ra" Content="Ra" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ra_Click"/>
+                            <Border Width="50" Height="50" >
+                                <TextBlock Text="Ac~Lr" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Button Name="Rf" Content="Rf" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Rf_Click"/>
+                            <Button Name="Db" Content="Db" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Db_Click"/>
+                            <Button Name="Sg" Content="Sg" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Sg_Click"/>
+                            <Button Name="Bh" Content="Bh" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Bh_Click"/>
+                            <Button Name="Hs" Content="Hs" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Hs_Click"/>
+                            <Button Name="Mt" Content="Mt" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Mt_Click" />
+                            <Button Name="Ds" Content="Ds" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ds_Click"/>
+                            <Button Name="Rg" Content="Rg" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Rg_Click"/>
+                            <Button Name="Cn" Content="Cn" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cn_Click"/>
+                            <Button Name="Uut" Content="Nh" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Uut_Click"/>
+                            <Button Name="Fl" Content="Fl" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Fl_Click"/>
+                            <Button Name="Uup" Content="Mc" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Uup_Click"/>
+                            <Button Name="Lv" Content="Lv" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Lv_Click"/>
+                            <Button Name="Uus" Content="Ts" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Uus_Click"/>
+                            <Button Name="Uuo" Content="Og" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Uuo_Click"/>
+
+                        </GridView>
+                    </RelativePanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="镧系与锕系" Margin="10,10,0,5" Name="LA" >
+                    <ScrollViewer>
+                        <RelativePanel>
+                            <GridView Name="G1">
+                                <Border Width="50" Height="50" >
+                                    <TextBlock Text="镧系" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <Button Name="La" Content="La" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="La_Click" />
+                                <Button Name="Ce" Content="Ce" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ce_Click" />
+                            <Button Name="Pr" Content="Pr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pr_Click"/>
+                            <Button Name="Nd" Content="Nd" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Nd_Click"/>
+                            <Button Name="Pm" Content="Pm" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pm_Click"/>
+                            <Button Name="Sm" Content="Sm" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Sm_Click"/>
+                            <Button Name="Eu" Content="Eu" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Eu_Click"/>
+                            <Button Name="Gd" Content="Gd" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Gd_Click"/>
+                            <Button Name="Tb" Content="Tb" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Tb_Click"/>
+                            <Button Name="Dy" Content="Dy" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Dy_Click"/>
+                                <Button Name="Ho" Content="Ho" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ho_Click" />
+                                <Button Name="Er" Content="Er" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Er_Click" />
+                            <Button Name="Tm" Content="Tm" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Tm_Click"/>
+                            <Button Name="Yb" Content="Yb" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Yb_Click"/>
+                            <Button Name="Lu" Content="Lu" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Lu_Click"/>
+                            </GridView>
+
+                            <GridView RelativePanel.Below="G1">
+                                <Border Width="50" Height="50" >
+                                    <TextBlock Text="锕系" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            <Button Name="Ac" Content="Ac" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Ac_Click"/>
+                            <Button Name="Th" Content="Th" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Th_Click"/>
+                            <Button Name="Pa" Content="Pa" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pa_Click"/>
+                            <Button Name="U" Content="U" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="U_Click"/>
+                            <Button Name="Np" Content="Np" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Np_Click"/>
+                                <Button Name="Pu" Content="Pu" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Pu_Click" />
+                                <Button Name="Am" Content="Am" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Am_Click" />
+                            <Button Name="Cm" Content="Cm" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cm_Click"/>
+                            <Button Name="Bk" Content="Bk" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Bk_Click"/>
+                            <Button Name="Cf" Content="Cf" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Cf_Click"/>
+                            <Button Name="Es" Content="Es" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Es_Click"/>
+                            <Button Name="Fm" Content="Fm" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Fm_Click"/>
+                            <Button Name="Md" Content="Md" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Md_Click"/>
+                            <Button Name="No" Content="No" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="No_Click"/>
+                            <Button Name="Lr" Content="Lr" FontSize="15"  Width="50" Height="50" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Click="Lr_Click"/>
+
+                            </GridView>
+                        </RelativePanel>
+                    </ScrollViewer>
+                </PivotItem>
+                </Pivot>
+
+
+        <ScrollViewer Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="0">
+
+            <RelativePanel  >
+                    <RelativePanel Name="S1"  Width="195" Height="167" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                        <TextBlock Name="T1"  Text="序数" Margin="10" FontSize="20"/>
+                         <TextBlock Name="Yuansu" Text="" Margin="60,0,20,20" FontSize="60" RelativePanel.Below="T1" HorizontalAlignment="Right"/>
+                    </RelativePanel >
+                <RelativePanel Name="S2"  Width="195" RelativePanel.RightOf="S1" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                    <TextBlock Name="T32" Text="位置" Margin="10" FontSize="20" />
+                    <TextBlock Name="T33" Text="周期:" Margin="20" FontSize="15" RelativePanel.Below="T32"/>
+                    <TextBlock Name="T34" Text="族:   " Margin="20" FontSize="15" RelativePanel.Below="T33"/>
+                     <TextBlock Name="Zhouqi" Text="" Margin="20" FontSize="15" RelativePanel.RightOf="T33" RelativePanel.Below="T32"/>
+                     <TextBlock Name="Zu" Text="" Margin="20" FontSize="15" RelativePanel.RightOf="T33" RelativePanel.Below="T33"/>
+                </RelativePanel >
+
+                <RelativePanel Name="S4" RelativePanel.RightOf="S2"  Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                        <TextBlock Name="T5"  Text="物理性质" Margin="10" FontSize="20"/>
+                    <TextBlock Name="T25" Text="相对原子质量:" Margin="20" FontSize="15" RelativePanel.Below="T18"/>
+                    <TextBlock Name="T6" Text="状态:" Margin="20" FontSize="15" RelativePanel.Below="T5"/>
+                    <TextBlock Name="T7" Text="熔点（℃）:" Margin="20" FontSize="15" RelativePanel.Below="T6"/>
+                    <TextBlock Name="T8" Text="沸点（℃）:" Margin="20" FontSize="15" RelativePanel.Below="T7"/>
+                    <TextBlock Name="T9" Text="密度（g/立方厘米）:" Margin="20" FontSize="15" RelativePanel.Below="T8"/>
+                    <TextBlock Name="T11" Text="颜色:" Margin="20" FontSize="15" RelativePanel.Below="T9"/>
+                    <TextBlock Name="T18" Text="具有放射性:" Margin="20" FontSize="15" RelativePanel.Below="T11"/>
+
+                    <TextBlock Name="ZHUANGTAI" Text="" Margin="20" FontSize="15" RelativePanel.Below="T5" RelativePanel.RightOf="T9" />
+                    <TextBlock Name="RONGDIAN" Text="" Margin="20" FontSize="15" RelativePanel.Below="T6" RelativePanel.RightOf="T9"/>
+                    <TextBlock Name="FEIDIAN" Text="" Margin="20" FontSize="15" RelativePanel.Below="T7" RelativePanel.RightOf="T9"/>
+                    <TextBlock Name="MIDU" Text="" Margin="20" FontSize="15" RelativePanel.Below="T8" RelativePanel.RightOf="T9"/>
+                    <TextBlock Name="YANSE" Text="" Margin="20" FontSize="15" RelativePanel.Below="T9" RelativePanel.RightOf="T9"/>
+                    <TextBlock Name="FANGSHEXING" Text="" Margin="20" FontSize="15" RelativePanel.Below="T11" RelativePanel.RightOf="T9"/>
+                    <TextBlock Name="Xiangduiyuanzizhiliang" Text="" Margin="20" FontSize="15" RelativePanel.Below="T18" RelativePanel.RightOf="T9"/>
+
+                </RelativePanel>
+                    <RelativePanel Name="S3"  RelativePanel.Below="S2" Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                        <TextBlock Name="T12"  Text="原子性质" Margin="10" FontSize="20"/>
+                        <TextBlock Name="T13" Text="原子半径（pm）:" Margin="20" FontSize="15" RelativePanel.Below="T12"/>
+                        <TextBlock Name="T14" Text="原子体积（立方厘米/mol）:" Margin="20" FontSize="15" RelativePanel.Below="T13"/>
+                        <TextBlock Name="T15" Text="电负性（鲍林标度）:" Margin="20" FontSize="15" RelativePanel.Below="T14"/>
+                    <TextBlock Name="T16" Text="电离能（eV）:" Margin="20" FontSize="15" RelativePanel.Below="T15"/>
+                    <TextBlock Name="T17" Text="电子排布:" Margin="20" FontSize="15" RelativePanel.Below="T16"/>
+
+                    <TextBlock Name="YUANZIBANJING" Text="" Margin="20" FontSize="15" RelativePanel.Below="T12" RelativePanel.RightOf="T14" />
+                    <TextBlock Name="YUANZITIJI" Text="" Margin="20" FontSize="15" RelativePanel.Below="T13" RelativePanel.RightOf="T14"/>
+                    <TextBlock Name="DIANFUXING" Text="" Margin="20" FontSize="15" RelativePanel.Below="T14" RelativePanel.RightOf="T14"/>
+                    <TextBlock Name="DIANLINENG" Text="" Margin="20" FontSize="15" RelativePanel.Below="T15" RelativePanel.RightOf="T14"/>
+                    <TextBlock Name="DIANZIPAIBU" Text="" Margin="20" FontSize="15" RelativePanel.Below="T16" RelativePanel.RightOf="T14"/>
+
+                </RelativePanel>
+                    <RelativePanel Name="S5" RelativePanel.Below="S3"  Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                        <TextBlock Name="T22"  Text="名称" Margin="10" FontSize="20"/>
+                        <TextBlock Name="T23" Text="中文：" Margin="20" FontSize="15" RelativePanel.Below="T22"/>
+                        <TextBlock Name="T24" Text="English：" Margin="20" FontSize="15" RelativePanel.Below="T23"/>
+                    <TextBlock Name="CHZN" Text="" Margin="20" FontSize="15" RelativePanel.Below="T22" RelativePanel.RightOf="T24"/>
+                    <TextBlock Name="EN" Text="" Margin="20" FontSize="15" RelativePanel.Below="T23" RelativePanel.RightOf="T24"/>
+
+                </RelativePanel>
+                <Grid Name="S6" RelativePanel.RightOf="S5"  RelativePanel.Below="S4"  Width="400" Height="200" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5" >
+                    <TextBlock Name="T" TextWrapping="WrapWholeWords"  Text="特别的内容" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"  />
+                    </Grid>
+
+
+
+
+            </RelativePanel>
+        </ScrollViewer>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,171 @@
+﻿<Page
+    x:Class="元素与物质.wuzhi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:元素与物质"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+    <Grid Background="Transparent">
+        <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+        <Grid  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+            <ScrollViewer Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+
+        <RelativePanel  >
+
+            <RelativePanel Name="S1"  Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5" RelativePanel.Below="S7">
+            <TextBlock Name="T1"  Text="名称" Margin="10" FontSize="20"/>
+                <TextBlock Name="T2" Text="英文名:" Margin="20" FontSize="15" RelativePanel.Below="T1"/>
+                <TextBlock Name="T4" Text="分子量:" Margin="20" FontSize="15" RelativePanel.Below="T2"/>
+                        <TextBlock Name="YINGWENMING" RelativePanel.RightOf="T2" RelativePanel.Below="T1" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="FENZILIANG" RelativePanel.RightOf="T2" RelativePanel.Below="T2" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                    </RelativePanel >
+            <RelativePanel Name="S2" RelativePanel.Below="S1"  Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                <TextBlock Name="T5"  Text="物理性质" Margin="10" FontSize="20"/>
+                <TextBlock Name="T6" Text="物质形态:" Margin="20" FontSize="15" RelativePanel.Below="T5"/>
+                <TextBlock Name="T7" Text="颜色:" Margin="20" FontSize="15" RelativePanel.Below="T6"/>
+                <TextBlock Name="T8" Text="气味:" Margin="20" FontSize="15" RelativePanel.Below="T7"/>
+                <TextBlock Name="T9" Text="沸点:" Margin="20" FontSize="15" RelativePanel.Below="T8"/>
+                <TextBlock Name="T10" Text="熔点:" Margin="20" FontSize="15" RelativePanel.Below="T9"/>
+                <TextBlock Name="T11" Text="溶解性:" Margin="20" FontSize="15" RelativePanel.Below="T10"/>
+
+                        <TextBlock Name="XINGZHUANG" RelativePanel.RightOf="T6" RelativePanel.Below="T5" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="YANSE" RelativePanel.RightOf="T6" RelativePanel.Below="T6" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="QIWEI" RelativePanel.RightOf="T6" RelativePanel.Below="T7" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="FEIDIAN" RelativePanel.RightOf="T6" RelativePanel.Below="T8" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="RONGDIAN" RelativePanel.RightOf="T6" RelativePanel.Below="T9" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="RONGJIEXING" RelativePanel.RightOf="T6" RelativePanel.Below="T10" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                    </RelativePanel>
+                        <RelativePanel Name="S3"  RelativePanel.RightOf="S1" Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5" RelativePanel.Below="AD">
+                <TextBlock Name="T12"  Text="化学性质" Margin="10" FontSize="20"/>
+                <TextBlock Name="T13" Text="可燃性:" Margin="20" FontSize="15" RelativePanel.Below="T12"/>
+                <TextBlock Name="T14" Text="稳定性:" Margin="20" FontSize="15" RelativePanel.Below="T13"/>
+                <TextBlock Name="T15" Text="酸性:" Margin="20" FontSize="15" RelativePanel.Below="WENDINGXING"/>
+                <TextBlock Name="T16" Text="碱性:" Margin="20" FontSize="15" RelativePanel.Below="T15"/>
+                <TextBlock Name="T17" Text="氧化性:" Margin="20" FontSize="15" RelativePanel.Below="T16"/>
+                <TextBlock Name="T18" Text="还原性:" Margin="20" FontSize="15" RelativePanel.Below="T17"/>
+                        <TextBlock Name="KERANXING" RelativePanel.RightOf="T13" RelativePanel.Below="T12" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="WENDINGXING" RelativePanel.RightOf="T13" RelativePanel.Below="T13" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="SUANXING" RelativePanel.RightOf="T13" RelativePanel.Below="WENDINGXING" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="JIANXING" RelativePanel.RightOf="T13" RelativePanel.Below="T15" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="YANGHUAXING" RelativePanel.RightOf="T13" RelativePanel.Below="T16" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="HUANYUANXING" RelativePanel.RightOf="T13" RelativePanel.Below="T17" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+
+                    </RelativePanel>
+            <RelativePanel Name="S4" RelativePanel.RightOf="S2" RelativePanel.Below="S3" Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                <TextBlock Name="T19"  Text="制取与检验" Margin="10" FontSize="20"/>
+
+                <TextBlock Name="T20" Text="制取" Margin="20" FontSize="15" RelativePanel.Below="T19"/>
+                <TextBlock Name="T21" Text="检验" Margin="20" FontSize="15" RelativePanel.Below="ZHIQU"/>
+                        <TextBlock Name="ZHIQU" RelativePanel.RightOf="T20" RelativePanel.Below="T19" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="JIANYAN" RelativePanel.RightOf="T20" RelativePanel.Below="ZHIQU" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                    </RelativePanel>
+            <RelativePanel Name="S5" RelativePanel.Below="S2" Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                <TextBlock Name="T22"  Text="安全措施" Margin="10" FontSize="20"/>
+                <TextBlock Name="T23" Text="危害" Margin="20" FontSize="15" RelativePanel.Below="T22"/>
+                <TextBlock Name="T24" Text="防治" Margin="20" FontSize="15" RelativePanel.Below="WEIHAI"/>
+                        <TextBlock Name="WEIHAI" RelativePanel.RightOf="T23" RelativePanel.Below="T22" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="FANGZHI" RelativePanel.RightOf="T23" RelativePanel.Below="WEIHAI" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                    </RelativePanel>
+            <RelativePanel Name="S6" RelativePanel.Below="S4" RelativePanel.RightOf="S2" Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5">
+                <TextBlock Name="T25"  Text="应用领域" Margin="10" FontSize="20"/>
+                <TextBlock Name="T26" Text="日常用途" Margin="20" FontSize="15" RelativePanel.Below="T25"/>
+                <TextBlock Name="T27" Text="工业用途" Margin="20" FontSize="15" RelativePanel.Below="RICHANGYONGTU"/>
+                        <TextBlock Name="RICHANGYONGTU" RelativePanel.RightOf="T26" RelativePanel.Below="T25" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Name="GONGYEYONGTU" RelativePanel.RightOf="T26" RelativePanel.Below="RICHANGYONGTU" Margin="20" FontSize="15" TextWrapping="WrapWholeWords"/>
+
+                    </RelativePanel>
+                        <RelativePanel Name="S7"   Width="400" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }" Margin="5" RelativePanel.Below="AD">
+                            <AppBarButton Name="Up" Icon="Up"  Label="付费升级"   Margin="0,0,16,0" Click="Up_Click_1"/>
+                            <TextBlock Name="Fufei" Text="去除广告" RelativePanel.RightOf="Up" Margin="20" />
+                        </RelativePanel>
+                        <RelativePanel  Name="AD">
+                            <UI:AdControl Name="AD1" Margin="5" 
+  		ApplicationId="9n6rc7jtkln3"
+ 		AdUnitId="1100028798"
+ 		HorizontalAlignment="left"
+ 		Width="728"
+ 		Height="90"
+ 		VerticalAlignment="top"/>
+
+                        </RelativePanel>
+                    </RelativePanel>
+        </ScrollViewer>
+
+
+
+
+
+            <Pivot   Background="{ThemeResource SystemControlAcrylicWindowBrush }" >
+            <PivotItem Header="酸类" Margin="10,10,5,5">
+                    <ScrollViewer>
+
+                        <StackPanel  >
+                            <Button Name="A1" Content="高氯酸" Height="50"  FontSize="15"  HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A1_Click" />
+                            <Button Name="A2" Content="氢碘酸" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A2_Click"/>
+                            <Button Name="A3" Content="硫酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A3_Click"/>
+                            <Button Name="A4" Content="氢溴酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A4_Click"/>
+                            <Button Name="A5" Content="盐酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A5_Click"/>
+                            <Button Name="A6" Content="硝酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A6_Click"/>
+                            <Button Name="A7" Content="碘酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A7_Click"/>
+                            <Button Name="A8" Content="三氯乙酸" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A8_Click"/>
+                            <Button Name="A9" Content="草酸（乙二酸）" Height="50" FontSize="15"  HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="A9_Click"/>
+                            <Button Name="A10" Content="顺丁烯二酸" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="A10_Click"/>
+                            <Button Name="A11" Content="亚硫酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A11_Click"/>
+                            <Button Name="A12" Content="丙酮酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A12_Click"/>
+                            <Button Name="A13" Content="丙二酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A13_Click"/>
+                            <Button Name="A14" Content="氯乙酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A14_Click"/>
+                            <Button Name="A15" Content="邻苯二甲酸" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A15_Click"/>
+                            <Button Name="A16" Content="水杨酸" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="A16_Click"/>
+                    </StackPanel>
+                    </ScrollViewer>
+
+                </PivotItem>
+                <PivotItem Header="碱类" Margin="10,10,5,5">
+                    <ScrollViewer>
+
+                        <StackPanel  >
+                            <Button Name="B1" Content="氢氧化锂" Height="50" FontSize="15"  HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B1_Click"/>
+                            <Button Name="B2" Content="氢氧化钠" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="B2_Click"/>
+                            <Button Name="B3" Content="氢氧化钙" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B3_Click"/>
+                            <Button Name="B4" Content="氢氧化钾" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B4_Click"/>
+                            <Button Name="B5" Content="氨水" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B5_Click"/>
+                            <Button Name="B6" Content="氢氧化镁" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B6_Click"/>
+                            <Button Name="B7" Content="氢氧化铜" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B7_Click"/>
+                            <Button Name="B8" Content="氢氧化钡" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="B8_Click"/>
+                            <Button Name="B9" Content="氢氧化铝" Height="50" FontSize="15"  HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="B9_Click"/>
+                            <Button Name="B10" Content="氢氧化铁" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="B10_Click"/>
+                        </StackPanel>
+                    </ScrollViewer>
+
+                </PivotItem>
+                <PivotItem Header="盐类" Margin="10,10,5,5">
+                    <ScrollViewer>
+
+                        <StackPanel  >
+                            <Button Name="C1" Content="硫酸锌" Height="50" FontSize="15"  HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="C1_Click"/>
+                            <Button Name="C2" Content="碳酸钠" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="C2_Click"/>
+                            <Button Name="C3" Content="硫酸铜" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C3_Click"/>
+                            <Button Name="C4" Content="碳酸氢钠" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C4_Click"/>
+                            <Button Name="C5" Content="硫酸钡" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C5_Click"/>
+                            <Button Name="C6" Content="碳酸钙" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C6_Click"/>
+                            <Button Name="C7" Content="高锰酸钾" Height="50" FontSize="15"  HorizontalAlignment="Stretch" Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C7_Click"/>
+                            <Button Name="C8" Content="硫酸镁" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"  Click="C8_Click"/>
+                            <Button Name="C9" Content="碳酸氢钙" Height="50" FontSize="15"  HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="C9_Click"/>
+                            <Button Name="C10" Content="硫酸氢钠" Height="50" FontSize="15" HorizontalAlignment="Stretch"  Background="{ThemeResource SystemControlChromeMediumAcrylicElementMediumBrush }"   Click="C10_Click"/>
+                        </StackPanel>
+                    </ScrollViewer>
+
+                </PivotItem>
+        </Pivot>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

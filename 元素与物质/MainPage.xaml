@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="元素与物质.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:元素与物质"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource SystemControlAcrylicWindowBrush }" >
+        <NavigationView x:Name="NavView" AlwaysShowHeader="True"   Background="Transparent"  OpenPaneLength="200"  
+                    SelectionChanged="NavView_SelectionChanged" Canvas.ZIndex="0" IsBackButtonVisible="Auto" IsBackEnabled="True" BackRequested="NavView_BackRequested" FontFamily="Segoe UI" >
+            <NavigationView.Header>
+                <CommandBar Name="Header" Height="28" Background="Transparent"   >
+                    <CommandBar.Content>
+                            <TextBlock Text="元素与物质"  FontFamily="Segoe UI" Margin="0,8,0,0" FontSize="15"/>
+                    </CommandBar.Content>
+                </CommandBar>
+            </NavigationView.Header>
+            <NavigationView.MenuItems >
+                <NavigationViewItem x:Uid="Yuansu"  Content="元素" Tag="y" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEB50;" FontFamily="Segoe MDL2 Assets"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Wuzhi"  Content="物质" Tag="w">
+                    <NavigationViewItem.Icon >
+                        <FontIcon Glyph="&#xE16E;" FontFamily="Segoe MDL2 Assets"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+            </NavigationView.MenuItems>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="48" />
+                </Grid.RowDefinitions>
+                <Frame x:Name="rootFrame" >
+                </Frame>
+                <Grid Grid.Row="1" Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+                    <CommandBar    HorizontalAlignment="Right" VerticalAlignment="Bottom" DefaultLabelPosition="Right" Background="{ThemeResource SystemControlAcrylicWindowBrush}" >
+
+                    <AppBarButton Icon="AllApps"  Label="官网与反馈" >
+                        <Button.Flyout>
+                            <Flyout >
+                                <Grid Width="260" Height="50">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Button Name="FEEDBACK" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="反馈" Click="FEEDBACK_Click" Margin="2"/>
+                                        <HyperlinkButton Grid.Column="0" NavigateUri="http://www.pisces365.icoc.me/" Content="官方网站" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                </Grid>
+                            </Flyout>
+                        </Button.Flyout>
+                    </AppBarButton>
+                    <AppBarButton Icon="Emoji2"  Label="评分"  Click="AppBarButton_Click"/>
+                        <AppBarButton Icon="More"  Label="更多应用"  Click="Pisces365_Click"/>
+                    </CommandBar>
+                </Grid>
+            </Grid>
+
+
+        </NavigationView  >
+
+
+
+
+    </Grid>
+</Page>
